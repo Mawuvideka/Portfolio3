@@ -1,0 +1,156 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./style.css" />
+
+		<nav>
+			<div class="logo">
+				<img class="image" src="./images/543343588.840183.jpg" alt="" />
+
+				<h4 class="logoText">
+					Mawuli
+					<br />
+					Denteh
+				</h4>
+			</div>
+
+			<ul class="nav-links">
+				<li>
+					<a href="./index.html">HOME</a>
+				</li>
+				<li>
+					<a href="#">ABOUT</a>
+				</li>
+				<li>
+					<a href="#">PROJECTS</a>
+				</li>
+				<li>
+					<a href="./assignment.html">ASSIGNMENTS</a>
+				</li>
+				<li>
+					<a href="./lessons.html">LESSONS</a>
+				</li>
+			</ul>
+
+			<div class="burger">
+				<div class="line1"></div>
+				<div class="line2"></div>
+				<div class="line3"></div>
+			</div>
+		</nav>
+
+		<style>
+			.form {
+				padding: 20px;
+				margin: 5% 20%;
+				background-color: lightgrey;
+				width: 50%;
+				border-radius: 10px;
+			}
+
+			label {
+				font-family: arial;
+				font-size: 18px;
+				font-weight: 600;
+			}
+
+			textarea {
+				width: 90%;
+			}
+
+			.all {
+				margin: 0px 0px 0px 50px;
+				padding: 0px;
+			}
+
+			input[type='text'],
+			select {
+				width: 90%;
+				margin: 8px 0;
+				padding: 12px 20px;
+				display: inline-block;
+				border-radius: 4px;
+				border-color: lightgrey;
+				box-sizing: border-box;
+				font-size: 15px;
+				font-family: verdana;
+				font-weight: 400;
+			}
+
+			input[type='submit'] {
+				width: 90px;
+				height: 40px;
+				background-color: gray;
+				color: white;
+				margin: 8px 0;
+				border: none;
+				border-radius: 4px;
+				cursor: pointer;
+				font-size: 15px;
+			}
+
+			input[type='submit']:hover {
+				background-color: green;
+				width: 90px;
+				font-size: 18px;
+			}
+			/* MOBILE */
+			@media screen and (max-width: 768px) {
+				/* body{
+			    display: none;
+			  } */
+				.form {
+					width: 300px;
+				}
+				.all {
+					margin: 0px;
+					padding: 0px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="form">
+			<form action="">
+				<div class="all">
+					<label for="firstName">First Name</label>
+					<br />
+					<input placeholder="Your First Name" type="text" />
+					<br />
+					<br />
+					<label for="lastName">Last Name</label>
+					<br />
+					<input placeholder=" Your Last Name" type="text" />
+					<br />
+					<br />
+					<label for="country">Country</label>
+					<br />
+					<select name="" id="">
+						<option value="">Ghana</option>
+						<option value="">United States of America</option>
+						<option value="">Nigeria</option>
+					</select>
+					<br />
+					<br />
+					<label for="">Subject</label>
+					<br />
+					<textarea
+						placeholder="tell us about yourself"
+						name=""
+						id=""
+						cols="30"
+						rows="10"
+					></textarea>
+					<br />
+					<input type="submit" />
+				</div>
+			</form>
+		</div>
+		<script src="./app.js"></script>
+	</body>
+</html>

@@ -1,0 +1,193 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lessons</title>
+        <link rel="stylesheet" href="./style.css">
+        <style>
+            *{
+                margin: 0px;
+                padding: 0px;
+                box-sizing: border-box;
+            }
+            .all{
+                /* margin: 5% 40%; */
+                margin-left: 90px;
+                margin-right: 90px;
+                margin-top: 40px;
+            }
+            .heading{
+                /* margin: 5% 40%; */
+                margin-left: 20px;
+                margin-right: 20px;
+                text-align: center;
+            }
+            .date{
+                background-color:skyblue;
+                width: 100%;
+                padding: 18px;
+                /* border: none; */
+                margin: auto;
+                margin-top: 20px;
+                cursor: pointer;
+                font-size: medium;
+                border-radius: 9px;
+                font-family: verdana;
+                font-weight: bold;
+                transition: 0.4s;
+                display: inline-block;
+            }
+            .date:hover{
+                background-color: rgb(230, 184, 116);
+                border-style: ridge;
+                border-width: medium;
+                border-color: lightgreen;
+                border: none;
+            }
+            .notes{
+                margin: auto;
+                width: 100%;
+                font-family: arial;
+                font-size: medium;
+                background-color: white;
+                margin-top: 3px;
+                overflow: hidden;
+                max-height: 0;
+                transition: max-height 0.2s ease-out;
+            }
+            h2{
+                text-transform: uppercase;
+                font-family: verdana;
+             }
+             .heading   p{
+                 font-family: arial;
+             }
+            h2::before{
+                content: "\1F9E0";
+                padding-right: 20px;
+            }
+            h2::after{
+                content:"\1F4A1";
+                padding-left: 20px;
+            }
+            /* .date::before{
+                content: "\1F4A1";
+                padding-right: 20px;
+            } */
+            .date::after{
+                content:"\1F4DA";
+                padding-left: 20px;
+            }
+
+            /* MOBILE */
+            @media screen and (max-width: 768px){
+                body{
+                    overflow-x: hidden;
+                }
+                .all{
+                    margin: 2%;
+                    margin-top: 20px;
+                }
+            }
+        </style>
+	</head>
+	<body>
+        <nav>
+			<div class="logo">
+				<img class="image" src="./images/543343588.840183.jpg" alt="" />
+
+				<h4 class="logoText">
+					Mawuli
+					<br />
+					Denteh
+				</h4>
+			</div>
+
+			<ul class="nav-links">
+				<li>
+					<a href="./index.html">HOME</a>
+				</li>
+				<li>
+					<a href="#">ABOUT</a>
+				</li>
+				<li>
+					<a href="#">PROJECTS</a>
+				</li>
+				<li>
+					<a href="./assignment.html">ASSIGNMENTS</a>
+				</li>
+				<li>
+					<a href="./lessons.html">LESSONS</a>
+				</li>
+			</ul>
+
+			<div class="burger">
+				<div class="line1"></div>
+				<div class="line2"></div>
+				<div class="line3"></div>
+			</div>
+		</nav>
+        <div class="all">
+            <div class="heading">
+                <h2>what I have learnt</h2>
+                <p>Ghana Tech Lab Web Development Training @ Ho Node Hub</p>
+
+            </div class="heading">
+            <button class="date">
+                Day 1
+                <br>
+                Monday 20th July, 2020
+            </button class="date">
+                <div class="notes">
+                    <p>
+                        what ever you have learnt goes here. behave yourself. don't be stupid. We are here to learn.
+                    </p>
+                </div class="notes">
+
+                <button class="date">
+                    Day 2
+                    <br>
+                    Tuesday 21st July, 2020
+                </button class="date">
+                    <div class="notes">
+                        <p>
+                            what ever you have learnt goes here
+                        </p>
+                    </div class="notes">
+    
+                <button class="date">
+                    Day 3
+                    <br>
+                    Wednesday 22nd July, 2020
+                </button class="date">
+                    <div class="notes">
+                        <p>
+                            what ever you have learnt goes here
+                        </p>
+                    </div class="notes">
+    
+                
+        </div>
+
+        <script>
+            var acc = document.getElementsByClassName('date');
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    var panel = this.nextElementSibling;
+                    if (panel.style.maxHeight) {
+                        panel.style.maxHeight = null;
+                    } else {
+                        panel.style.maxHeight = panel.scrollHeight + 'px';
+                    }
+                });
+            }
+        </script>
+        <script src="./app.js"></script>
+	</body>
+</html>
