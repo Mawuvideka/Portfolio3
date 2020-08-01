@@ -1,86 +1,95 @@
 /** @format */
 
 * {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 body {
-	background-image: linear-gradient(45deg, skyblue, pink);
-	/* color: brown; */
-	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-		Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-	min-height: 100vh;
+  background-image: linear-gradient(45deg, skyblue, pink);
+  /* color: brown; */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  min-height: 100vh;
 }
 header {
-	font-size: 1rem;
-	text-transform: uppercase;
-	letter-spacing: 5px;
-	color: brown;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: rgb(44, 44, 44);
 }
 header,
 form {
-	min-height: 18vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  min-height: 18vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 form input,
 form button {
-	padding: 0.5rem;
-	font-size: 2rem;
-	border: none;
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
 }
 form button:hover {
-	color: brown;
+  /* color: brown; */
 }
 .todoContainer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .todoList {
-	min-width: 30%;
-	list-style: none;
+  min-width: 30%;
+  list-style: none;
 }
 .todo {
-	margin: 0.5rem;
-	background-color: white;
-	color: black;
-	font-size: 1.5rem;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+  margin: 0.5rem;
+  background-color: white;
+  color: black;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 .todo li {
-	flex: 1;
+  flex: 1;
 }
 .trash-btn,
 .complete-btn {
-	background-color: brown;
-	color: white;
-	padding: 1rem;
-	border: none;
-	cursor: pointer;
-	font-size: 1rem;
+  background-color: rgb(255, 47, 47);
+  color: white;
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
 }
 .complete-btn {
-	background-color: green;
+  background-color: green;
 }
 .todoItem {
-	padding: 0rem, 0.5rem;
+  padding: 0rem, 0.5rem;
 }
 .fa-trash,
 .fa-check {
-	pointer-events: none;
+  pointer-events: none;
 }
 .fa-plus-square {
-	color: black;
+  color: rgb(44, 44, 44);
+  background-color: white;
 }
 .fa-plus-square:hover {
-	color: brown;
+  color: rgb(255, 47, 47);
+  background-color: white;
+}
+.todoButton {
+  /* background-color: white; */
+}
+.todoButton:hover {
+  background-color: white;
+  cursor: pointer;
 }
 .completed {
-	text-decoration: line-through;
-	opacity: 30%;
+  text-decoration: line-through;
+  opacity: 30%;
 }
