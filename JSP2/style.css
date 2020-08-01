@@ -1,0 +1,56 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(180deg, rgb(238, 238, 153), rgb(78, 53, 53));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Times New Roman', Times, serif;
+}
+h1{
+    position: relative;
+}
+h1 button{
+    position: absolute;
+    right: 0;
+    transform: translate(120%, -50%);
+    z-index: 2;
+}
+.btn{
+    cursor: pointer;
+    background-color: crimson;
+    border: 1px solid beige;
+    border-radius: 3px;
+    font-size: 14px;
+    margin-top: 20px;
+    padding: 10px 15px;
+}
+.btn-small{
+    font-size: 12px;
+    padding: 5px 10px;
+}
+.clear{
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+}
+.btn-ghost{
+    border: 0;
+    background-color: transparent;
+}
+.cards{
+    perspective: 1000px;
+    position: relative;
+    height: 300px;
+    width: 500px;
+    max-width: 100%;
+}
+
+
