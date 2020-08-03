@@ -9,16 +9,8 @@
     <link rel="stylesheet" href="./css/all.min.css" />
     <link rel="stylesheet" href="./css/fontawesome.css" />
     <link rel="stylesheet" href="./css/fontawesome.min.css" />
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/fontawesome.min.css"
-    /> -->
-    <link rel="stylesheet" href="./style.css" />
-    <title>PROJECTS</title>
+    <link rel="stylesheet" href="./style.css">
+    <title>Projects</title>
   </head>
   <body>
     <nav>
@@ -56,35 +48,64 @@
         <div class="line3"></div>
       </div>
     </nav>
+
     <style>
       * {
         margin: 0px;
         padding: 0px;
         box-sizing: border-box;
       }
-      .proj {
+      #project-list {
+        margin: 10px 40px;
+        padding: 10px 20px;
+      }
+      button{
         display: flex;
         flex-direction: column;
-        font-size: 24px;
       }
-      li {
+      button:hover{
+        background-color: grey;
       }
+      .proj{
+        font-size: 30px;
+        margin: 20px;
+        padding: 8px;
+        margin-left: 40px;
+        background-color: lightgrey;
+        color: brown;
+        border-radius: 15px;
+      }
+      a{
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+        padding: 7px;
+      }
+      a:hover{
+        text-decoration: underline;
+      }
+      
+      
+      
+      
     </style>
-    <p>Welcome to my project page</p>
+    <h2>Welcome to my projects page</h2>
     <br />
 
-    <ol>
-      <li>
+    <div id="project-list">
+      <ul>
         <button class="proj">
-          <i class="fa fa-folder-open-o">
-            <a href="./JSP/index.html">project 1</a>
-          </i>
+          <i class="fa fa-folder" aria-hidden="true"><a href="./JSP/index.html">Project 1</a></i> 
         </button>
         <button class="proj">
-          <a href="./JSP2/index.html">Project 2</a>
+          <i class="fa fa-folder" aria-hidden="true"><a href="./JSP2/index.html">Project 2</a></i> 
         </button>
-      </li>
-    </ol>
+        <button class="proj">
+          <i class="fa fa-folder" aria-hidden="true"><a href="./LP/index.html">Project 3</a></i> 
+        </button>
+      </ul>
+    </div>
+    
     <script src="./app.js"></script>
   </body>
 </html>

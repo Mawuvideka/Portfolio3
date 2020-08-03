@@ -29,23 +29,31 @@
                 background-color:skyblue;
                 width: 100%;
                 padding: 18px;
-                /* border: none; */
+                border: 1px solid skyblue;
                 margin: auto;
                 margin-top: 20px;
                 cursor: pointer;
                 font-size: medium;
                 border-radius: 9px;
+                outline: none;
                 font-family: verdana;
                 font-weight: bold;
                 transition: 0.4s;
                 display: inline-block;
+                box-shadow: 0px 1px 0 skyblue inset,
+                            0px -1px 0 skyblue inset,
+                            0px 4px 0 skyblue,
+                            0px 4px 2 rgb(165, 110, 110);
+                -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset,
+                0 -1px 0 rgba(255, 255, 255, 0.1) inset, 0 4px 0 #338a94,
+                0 4px 2px rgba(0, 0, 0, 0.5);
+                -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.5) inset,
+                0 -1px 0 rgba(255, 255, 255, 0.1) inset, 0 4px 0 #338a94,
+                0 4px 2px rgba(0, 0, 0, 0.5);
             }
+            .active, 
             .date:hover{
-                background-color: rgb(230, 184, 116);
-                border-style: ridge;
-                border-width: medium;
-                border-color: lightgreen;
-                border: none;
+                background-color: rgb(228, 190, 135);
             }
             .notes{
                 margin: auto;
@@ -61,10 +69,10 @@
             h2{
                 text-transform: uppercase;
                 font-family: verdana;
-             }
-             .heading   p{
-                 font-family: arial;
-             }
+            }
+            .heading   p{
+                font-family: arial;
+            }
             h2::before{
                 content: "\1F9E0";
                 padding-right: 10px;
@@ -143,7 +151,11 @@
             </button class="date">
                 <div class="notes">
                     <p>
-                        We started the course by setting up our development environment in VS Code, set up and connected our GitHub accounts to VS Code.
+                        We started the course by setting up our development environment in VS Code, set up and connected our GitHub accounts to VS Code. 
+                        <br>  
+                        I learnt basic concepts about HTML and CSS. HTML as a markup language helps us to put text or information on websites. 
+                        <br>
+                        CSS helps us to style the webpage and determine how items look on the page.
                     </p>
                 </div class="notes">
 
@@ -154,7 +166,11 @@
                 </button class="date">
                     <div class="notes">
                         <p>
-                            We set up our first GitHub repository and initialized it. We set up our GitHub site and used the Gitbash terminal to push our code to the site.
+                            We set up our first GitHub repository and initialized it. 
+                            <br>
+                            We set up our GitHub site and used the Gitbash terminal to push our code to the site using the add, commit and push commands.
+                            <br>
+
                         </p>
                     </div class="notes">
     
@@ -165,7 +181,9 @@
                 </button class="date">
                     <div class="notes">
                         <p>
-                            We dealt with HTML today. We learnt how to set up our boiler plate, worked with tags and basically began to use what we learnt to develop a basic html site.
+                            We practised with HTML today. 
+                            <br>
+                            We learnt how to set up our boiler plate, worked with tags and began to use what we learnt to develop a simple html website.
                         </p>
                     </div class="notes">
                     <button class="date">
@@ -175,7 +193,9 @@
                     </button class="date">
                         <div class="notes">
                             <p>
-                                
+                                I learnt about website design using Adobe XD today. 
+                                <br>
+                                For any web development project, the first step is to picture what you want to design and bring it to live using design software like Adobe XD and Figma. This will help you as you begin to actually design your website in yur editor.
                             </p>
                         </div class="notes">
                         <button class="date">
@@ -185,7 +205,11 @@
                         </button class="date">
                             <div class="notes">
                                 <p>
-                                    
+                                    We delved today into CSS. CSS is a powerful tool for making websites look beautiful.
+                                    <br>
+                                    It contains numerous properties that control how html elements are displayed. 
+                                    <br>
+                                    Some important properties we learnt about were width, height, padding, vh, margin and flex.
                                 </p>
                             </div class="notes">
                             <button class="date">
@@ -195,7 +219,11 @@
                             </button class="date">
                                 <div class="notes">
                                     <p>
-                                        
+                                        We continued building our portfolio website today!
+                                        <br>
+                                        We worked on our navigation bar, which holds all the links to our pages. 
+                                        <br>
+                                        I experienced the effect of properties like flex, display, margin, and padding and how they affect elements on a webpage. 
                                     </p>
                                 </div class="notes">
                                 <button class="date">
@@ -205,7 +233,9 @@
                                 </button class="date">
                                     <div class="notes">
                                         <p>
-
+                                            We learnt about HTML forms today. We used the form tag to create a simple form with two inputs and a textarea. 
+                                            <br>
+                                            We also worked on the lessons page of our portfolio website, which involved the use of javascript to manipulate a button to drop down and reveal text beneath it. 
                                         </p>
                                     </div class="notes">
                                     <button class="date">
@@ -215,7 +245,9 @@
                                     </button class="date">
                                         <div class="notes">
                                             <p>
-                                                
+                                                Today's project was about creating a To-do List using HTML, CSS and javascript. 
+                                                <br>
+                                                The list was created usng the input and button tags, and javascript was used to manipulate the "add" button to add a new todo item and also delete items. The ability to mark tasks as completed was also added. 
                                             </p>
                                         </div class="notes">
                                         <button class="date">
@@ -225,19 +257,33 @@
                                         </button class="date">
                                             <div class="notes">
                                                 <p>
-                                                    
+                                                    We started an interesting project today that relied heavily on javascript. It was a project of Flash Cards. 
+                                                    <br>
+                                                    We created buttons, inputs and a transparent button. 
                                                 </p>
                                             </div class="notes">
                                             <button class="date">
                                                 Day 10
                                                 <br>
-                                                Mon 03-Aug-20
+                                                Fri 31-Jul-20
                                             </button class="date">
                                                 <div class="notes">
                                                     <p>
-                                                        
+                                                        We continued the Flash Cards project, styling our page and adding javascript code to control the fnctioning of the flash card. 
+                                                        <br>
+                                                        We also learnt how to import use fontawesome icons and fonts in our projects. 
                                                     </p>
                                                 </div class="notes">
+                                                <button class="date">
+                                                    Day 11
+                                                    <br>
+                                                    Mon 03-Aug-20
+                                                </button class="date">
+                                                    <div class="notes">
+                                                        <p>
+                                                            
+                                                        </p>
+                                                    </div class="notes">
                                                                                                                     
     
                 
