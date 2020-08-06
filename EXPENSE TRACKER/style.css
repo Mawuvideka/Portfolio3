@@ -152,6 +152,6 @@ input[type="number"] {
 	transition: opacity 0.3s ease;
 }
 
-.list li:hover .delete-btn{
+.list li:hover .delete-btn {
 	opacity: 1;
 }
