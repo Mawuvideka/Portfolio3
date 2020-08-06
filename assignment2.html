@@ -1,13 +1,29 @@
-<!-- @format -->
-
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Document</title>
-	</head>
-	<body>
-		<p>waiting to happen</p>
-	</body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        #getdate .active{
+            border: 1px solid blue;
+        }
+    </style>
+    <title>Assignment 2</title>
+</head>
+<body>
+    <button id="getdate" onclick="displayDate()">
+            GET DATE
+    </button id="getdate">
+    <p id="showDate"></p id="showDate">
+
+    <script>
+            function displayDate(){
+            document.getElementById('showDate').innerHTML = Date();
+            }
+    </script>
+</body>
 </html>
