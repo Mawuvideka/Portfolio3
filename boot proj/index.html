@@ -18,96 +18,93 @@
 				justify-content: center;
 				align-items: center;
 			}
-			.card {
-				margin-top: 20px;
-			}
-			#logo {
-				display: flex;
-			}
 			.image {
 				height: 90px;
 				width: 189;
 			}
-			.navbar {
-				display: flex;
-				justify-content: space-around;
-				align-items: center;
-			}
-			.navbar-nav {
-				display: flex;
-				justify-content: space-around;
-			}
 			.nav-link {
 				font-size: 1.1rem;
 				transition: font-size 0.2s ease-in;
-				color: coral;
-				font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-					Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+				font-family: Verdana, Geneva, Tahoma, sans-serif;
+				color: black !important;
+			}
+			.nav-link:hover{
+				text-decoration: underline;
+				color: blue !important;
 				font-weight: bold;
 			}
-			.nav-link:hover,
-			.nav-link:active {
-				font-weight: bold;
-				font-size: 1.3rem;
-				color: #0082be;
-			}
-			.submit {
-				background-color: #0082be;
-				color: white;
-				font-weight: bold;
-				border: thin;
-				height: 30px;
-			}
-			.submit:hover {
-				font-size: 18px;
-				background-color: tomato;
-			}
-			.text {
-				background: white url(./images/icons8-search-50_resize.png) right center
-					no-repeat;
-				height: 30px;
-			}
-			.carou-name {
-				color: white;
+			.slider-name{
 				display: flex;
-				/* justify-content: center; */
-				/* align-items: center; */
-				padding: 0 0 0 24%;
-				letter-spacing: 20px;
-				font-family: georgia;
+				justify-content: center;
+				align-items: center;
+				
 			}
-			span {
+			h1{
 				color: yellow;
+				opacity: 70%;
+				letter-spacing: 50px;
+				font-family: georgia;
+				font-size: 4rem;
+			}
+			.card-columns{
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				margin-left: 15px;
+				margin-right: 15px;
+				margin-top: 30px;
+			}
+			/* M O B I L E    S C R E E N */
+			@media screen and (max-width: 768px) {
+				.card-columns {
+					display: block;
+					align-items: center;
+					justify-content: center;
+				}
+				.slider-name{
+					display: block;
+					justify-content: center;
+					align-items: center;
+				}
+				h1{
+					letter-spacing: 30px;
+					padding-left: 11%;
+				}
 			}
 		</style>
 		<title>Image Slider</title>
 	</head>
 	<body>
-		<nav class="navbar navbar-expand-sm bg-light">
-			<div id="logo">
-				<a href="#">
-					<img class="image" src="./images/LOGIC_LOGO-3.png" alt=""
-				/></a>
-			</div>
-			<ul class="navbar-nav">
-				<li class="nav-item">
-					<a class="nav-link" href="../index.html">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Gallery</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="#">Contact Us</a>
-				</li>
-			</ul>
-			<div id="searchBox">
-				<form method="get">
-					<input type="text" class="text" placeholder="search this site..." />
-					<input type="submit" value="Search" class="submit" />
+
+		 <nav class="navbar navbar-expand-sm navbar-light bg-light">
+			<a class="navbar-brand" href="#"> <img class="image" src="./images/LOGIC_LOGO-3.png" alt=""> </a>
+			<button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+				aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="collapsibleNavId">
+				<ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+					<li class="nav-item active">
+						<a class="nav-link" href="../index.html">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">About</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
+						<div class="dropdown-menu" aria-labelledby="dropdownId">
+							<a class="dropdown-item" href="#">New Releases</a>
+							<a class="dropdown-item" href="#">Credits</a>
+						</div>
+					</li>
+				</ul>
+				<form class="form-inline my-2 my-lg-0">
+					<input class="form-control mr-sm-2" type="text" placeholder="Search">
+					<button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
 				</form>
 			</div>
 		</nav>
-
+		<div class="slider-name"><h1>HAPPY SLIDER</h1></div>
 		<div class="container">
 			<div class="w-75 h-75">
 				<div class="carousel slide" id="carouselExample" data-ride="carousel">
@@ -128,6 +125,7 @@
 						<li data-target="#carouselExample" data-slide-to="9"></li>
 						<li data-target="#carouselExample" data-slide-to="10"></li>
 					</ol>
+					
 					<div class="carousel-inner">
 						<div class="carousel-item active">
 							<img src="./images/1.jpg" alt="" class="d-block w-100 h-100" />
@@ -181,51 +179,38 @@
 				</div>
 			</div>
 		</div>
-		<div class="carou-name">
-			<h1><span>Sunshine</span> Carousel</h1>
-		</div>
-		<div class="container">
-			<div class="card" style="width: 400px;">
-				<img
-					class="card-img-top"
-					src="./images/pass.jpg"
-					alt="Card image"
-					style="width: 100%;"
-				/>
+	
+		
+		 <div class="card-columns">
+			<div class="card">
+				<img class="card-img-top" src="./images/denzel2.jpg" alt="">
 				<div class="card-body">
-					<h4 class="card-title">Mawuli Denteh</h4>
-					<p class="card-text">
-						GIS Analyst | Web Developer
-						<br />
-						<a href="#">mawuvi@github.com</a>
-						<br />
-						Phone: (+233) 200000000
-					</p>
-
-					<a href="#" class="btn btn-primary stretched-link">See Profile</a>
+					<h4 class="card-title">Denzel Washington</h4>
+					<p class="card-text"> <p>Denzel Washington first studied journalism at Fordham University but then discovered an interest in acting. He made his feature film debut in the comedy A Carbon Copy (1981) and was cast on the hit TV medical drama St. Elsewhere (1982-88). He went on to appear in several hit movies, including Philadelphia, Man on Fire, The Book of Eli, American Gangster and Flight, and won Oscars for his roles in Glory and Training Day. He received an Oscar nomination for his starring role in 2016's Fences, an adaptation of August Wilson's Tony and Pulitzer Prize-winning play, and for the 2017 film Roman J. Israel, Esq.</p> </p>
 				</div>
 			</div>
-
-			<div class="card" style="width: 400px;">
-				<img
-					class="card-img-top"
-					src="./images/avatar-JaneDoe.jpg"
-					alt="Card image"
-					style="width: 100%;"
-				/>
+			<div class="card">
+				<img class="card-img-top" src="./images/keira.jpg" alt="">
 				<div class="card-body">
-					<h4 class="card-title">Jane Doe</h4>
-					<p class="card-text">
-						Architect | Software Engineer
-						<br />
-						<a href="#">janedoe@villagio.com</a>
-						<br />
-						Work: (+233) 242424242
-					</p>
-
-					<a href="#" class="btn btn-primary stretched-link">See Profile</a>
+					<h4 class="card-title">Keira Knightley</h4>
+					<p class="card-text">Actress Keira Knightley made her film debut at the age of nine in A Village Affair (1994). Her first major part came in Star Wars: Episode 1 - The Phantom Menace and she then became well-known for her performance as tomboy footballer Juliette "Jules" Paxton in Bend It Like Beckham. Her later films include Atonement, Pirates of the Caribbean, A Dangerous Method and Anna Karenina. She has also earned Oscar nominations for her roles in Pride & Prejudice and The Imitation Game.</p>
 				</div>
 			</div>
+			<div class="card">
+				<img class="card-img-top" src="./images/chris.jpg" alt="">
+				<div class="card-body">
+					<h4 class="card-title">Chris Hemsworth</h4>
+					<p class="card-text">Born on August 11, 1983, Australian heartthrob Chris Hemsworth has made quite a name for himself by swinging his hammer as Marvel comic book character Thor, starring in several films under that title and in related features like The Avengers. The Melbourne native and married dad has also earned leading roles in Snow White and the Huntsman, Rush and In the Heart of the Sea, while showing his comedic chops in reboots of Vacation and Ghostbusters.</p>
+				</div>
+			</div>
+			<div class="card">
+				<img class="card-img-top" src="./images/meagan good.jpg" alt="">
+				<div class="card-body">
+					<h4 class="card-title">Meagan Good</h4>
+					<p class="card-text">Meagan Monique Good is an American actress. She has appeared in numerous television shows, feature films, and music videos. Born in California, she started acting at the tender age of four and appeared in several television dramas before making her debut on the big screen. Her breakthrough performance as a sexually charged teenager came in the 1997 movie ‘Eve's Bayou.’ She then went on to land a regular role in the sitcom ‘Cousin Skeeter.’ A gorgeous and gifted performer, she was able to effortlessly make the transition from a child and teen star to an adult actress.</p>
+				</div>
+			</div>
+			
 		</div>
 
 		<script

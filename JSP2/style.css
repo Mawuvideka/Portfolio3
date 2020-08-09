@@ -165,7 +165,7 @@ h1 button {
   width: 500px;
   max-width: 100%;
 }
-.home {
-  display: flex;
-  font-size: 16px;
+.home a{
+  /* display: flex; */
+  font-size: 1.3rem;
 }

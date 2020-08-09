@@ -94,3 +94,6 @@ form button:hover {
   text-decoration: line-through;
   opacity: 30%;
 }
+.home a{
+  font-size: 1rem;
+}

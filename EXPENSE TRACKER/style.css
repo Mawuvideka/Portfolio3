@@ -31,6 +31,10 @@ h1 {
 	margin: 0;
 }
 
+h2{
+	padding-top: 10px;
+}
+
 h3 {
 	border-bottom: 1px solid #bbb;
 	padding-bottom: 10px;
@@ -154,4 +158,13 @@ input[type="number"] {
 
 .list li:hover .delete-btn {
 	opacity: 1;
+}
+.home{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: auto;
+}
+.home a{
+	font-size: 1.5rem;
 }
