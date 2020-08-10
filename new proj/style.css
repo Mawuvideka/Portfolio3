@@ -265,7 +265,7 @@ body {
 
   .section-1 .col-md-4 {
     padding-bottom: 20px;
-    padding-left: 20px;
+    padding-left: 10px;
     display: block;
     justify-content: center;
     align-items: center;
@@ -286,7 +286,7 @@ body {
     align-items: center;
   }
   .section-4 .col-md-7 img {
-    padding-right: 30%;
+    padding-right: 27%;
     width: 480px;
   }
 }
