@@ -64,7 +64,7 @@ body {
 .site-title {
   margin-top: 30%;
   margin-bottom: 7%;
-  font-size: 6rem;
+  font-size: 6.5rem;
 }
 .site-desc {
   font-size: 24px;
@@ -287,5 +287,6 @@ body {
   }
   .section-4 .col-md-7 img {
     padding-right: 30%;
+    width: 480px;
   }
 }
