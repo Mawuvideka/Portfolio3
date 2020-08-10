@@ -285,4 +285,7 @@ body {
     justify-content: center;
     align-items: center;
   }
+  .section-4 .col-md-7 img {
+    padding-right: 30%;
+  }
 }
