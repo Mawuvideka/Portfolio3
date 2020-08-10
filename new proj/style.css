@@ -273,8 +273,8 @@ body {
   .site-title {
     /* padding-left: 9%; */
     font-size: 3rem;
-    /* margin-left: 30px; */
-    margin-right: 40px;
+    margin-right: 30px;
+    padding-right: 30px;
     display: block;
     justify-content: center;
     align-items: center;
