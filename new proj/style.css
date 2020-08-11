@@ -225,7 +225,7 @@ body {
     box-sizing: border-box;
   } */
   body {
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     justify-content: center;
     align-items: center;
     display: block;
